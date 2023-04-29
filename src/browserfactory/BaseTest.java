@@ -16,6 +16,7 @@ public class BaseTest {
         if (browser.equalsIgnoreCase("Chrome")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--incognito");
+            //options.addArguments("--headless");
             driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("Firefox")) {
             driver = new FirefoxDriver();
